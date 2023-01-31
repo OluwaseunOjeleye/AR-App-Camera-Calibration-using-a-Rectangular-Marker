@@ -1,0 +1,52 @@
+﻿  application.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+  c:\users\oluwaseun ojeleye\documents\cpp_libraries\glfw\include\glfw\glfw3.h(123): note: see previous definition of 'APIENTRY'
+  camera.cpp
+  glfw_window.cpp
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glfw_window.cpp(87): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+  GLMetaseq.cpp
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(820): warning C4244: '*=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(823): warning C4244: '*=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(826): warning C4244: '*=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(829): warning C4244: '*=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1006): warning C4244: '/=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1007): warning C4244: '/=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1008): warning C4244: '/=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1073): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1078): warning C4244: '=': conversion from '__int64' to 'int', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1361): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1362): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1363): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1386): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1387): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1388): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1407): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1408): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1409): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1430): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1437): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1438): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1439): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1462): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1463): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1464): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1484): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1485): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1486): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1568): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1569): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+c:\users\oluwaseun ojeleye\documents\github\ar_square_marker\ar_marker\src\glmetaseq.cpp(1570): warning C4244: '=': conversion from 'double' to 'GLfloat', possible loss of data
+  main.cpp
+c:\program files (x86)\windows kits\10\include\10.0.17763.0\shared\minwindef.h(130): warning C4005: 'APIENTRY': macro redefinition
+  c:\users\oluwaseun ojeleye\documents\cpp_libraries\glfw\include\glfw\glfw3.h(123): note: see previous definition of 'APIENTRY'
+  metasequoia.cpp
+  square.cpp
+  square_detection.cpp
+  square_marker.cpp
+  square_marker_detection.cpp
+  Generating code
+  7722 of 8016 functions (96.3%) were compiled, the rest were copied from previous compilation.
+    57 functions were new in current compilation
+    4 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  AR_Marker.vcxproj -> C:\Users\Oluwaseun Ojeleye\Documents\Github\AR_Square_Marker\x64\Release\AR_Marker.exe

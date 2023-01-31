@@ -1,0 +1,107 @@
+	// cv::transpose(homography_matrix, homography_matrix);
+
+	// this->H = this->H.transpose();
+	std::cout << "h: \n" << H << std::endl;
+
+	double x1 = marker_square.point_list[0].x;
+	double x2 = marker_square.point_list[1].x;
+
+	double y1 = marker_square.point_list[0].y;
+	double y2 = marker_square.point_list[2].y;
+
+
+	double lx = (x2 - x1) / 2.0;
+	double ly = (y2 - y1) / 2.0;
+
+	Eigen::MatrixXd H_t = Eigen::MatrixXd::Zero(3, 3);
+	H_t << 1.0, 0.0, lx, 0.0, 1.0, ly, 0.0, 0.0, 1.0;
+	//this->H = H_t * this->H;
+
+	Eigen::Vector3d h1 = H.col(0);
+	Eigen::Vector3d h2 = H.col(1);
+	Eigen::Vector3d h3 = H.col(2);
+
+	Eigen::MatrixXd proj_mat_inv = proj_matrix.inverse();
+	double Lambda = 1.0 / ((proj_mat_inv * h1).norm());
+	std::cout << Lambda << std::endl;
+
+	Eigen::Vector3d r1 = (Lambda * (proj_mat_inv * h1)).normalized();
+	Eigen::Vector3d r2 = (Lambda * (proj_mat_inv * h2)).normalized();
+	Eigen::Vector3d r3 = (r1.cross(r2)).normalized();
+
+	T = Lambda * (proj_mat_inv * h3);
+
+	R.col(0) = r1;
+	R.col(1) = r2;
+	R.col(2) = r3;
+
+	Eigen::JacobiSVD<Eigen::MatrixXd> svd;
+	svd.compute(R, Eigen::ComputeFullU | Eigen::ComputeFullV);
+
+	Eigen::MatrixXd U = svd.matrixU();
+	Eigen::MatrixXd V = svd.matrixV();
+
+	R = U * V;
+	double det = R.determinant();
+	if (det < 0){
+		V(2, 0) *= -1;
+		V(2, 1) *= -1;
+		V(2, 2) *= -1;
+		R = U * V;
+	}
+
+
+
+
+
+
+// My Method
+// cv::transpose(homography_matrix, homography_matrix);
+
+	this->H = this->H.transpose();
+
+	double x1 = marker_square.point_list[0].x;
+	double x2 = marker_square.point_list[1].x;
+
+	double y1 = marker_square.point_list[0].y;
+	double y2 = marker_square.point_list[2].y;
+
+	double lx = (x2 - x1) / 2.0;
+	double ly = (y2 - y1) / 2.0;
+
+	Eigen::MatrixXd H_t = Eigen::MatrixXd::Zero(3, 3);
+	H_t << 1.0, 0.0, lx, 0.0, 1.0, ly, 0.0, 0.0, 1.0;
+	// this->H = H_t * this->H;
+
+	Eigen::Vector3d h1 = H.col(0);
+	Eigen::Vector3d h2 = H.col(1);
+	Eigen::Vector3d h3 = H.col(2);
+
+	Eigen::MatrixXd proj_mat_inv = proj_matrix.inverse();
+	double Lambda = ((proj_mat_inv * h1).norm());
+	std::cout << Lambda << std::endl;
+
+	Eigen::Vector3d r1 = (Lambda * (proj_mat_inv * h1)).normalized();
+	Eigen::Vector3d r2 = (Lambda * (proj_mat_inv * h2)).normalized();
+	Eigen::Vector3d r3 = (r1.cross(r2)).normalized();
+
+	T = Lambda * (proj_mat_inv * h3);
+
+	R.col(0) = r1;
+	R.col(1) = r2;
+	R.col(2) = r3;
+
+	Eigen::JacobiSVD<Eigen::MatrixXd> svd;
+	svd.compute(R, Eigen::ComputeFullU | Eigen::ComputeFullV);
+
+	Eigen::MatrixXd U = svd.matrixU();
+	Eigen::MatrixXd V = svd.matrixV();
+
+	R = U * V;
+	double det = R.determinant();
+	if (det < 0){
+		V(2, 0) *= -1;
+		V(2, 1) *= -1;
+		V(2, 2) *= -1;
+		R = U * V;
+	}
