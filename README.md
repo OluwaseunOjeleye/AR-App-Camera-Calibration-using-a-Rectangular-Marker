@@ -110,9 +110,7 @@ The implementation of these steps resulted in a reduction of noise during the sq
 
 ![](./img/Aspose.Words.07361881-0198-4a07-807b-b7da6d04e6d8.032.png)
 
-## Demo videos after stabilizing:
+## Demo video after stabilizing:
 
 [![Watch the video](./img/Aspose.Words.07361881-0198-4a07-807b-b7da6d04e6d8.029.png)](https://youtu.be/oMAx4KyZJhU)
 
-
-[![Watch the video](./img/Aspose.Words.07361881-0198-4a07-807b-b7da6d04e6d8.029.png)](https://youtu.be/i2cOmSF8YnU)
